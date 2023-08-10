@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta property="og:title" content="Melhorias acompanhamento de atividades - SGC">
+      <meta property="og:description" content="Informe DTI">
+      <meta property="og:url" content="https://depticodes.github.io/informedti/informativoSGC.html">
+      <meta property="og:type" content="website">
+
+  <title>Boletim Informativo</title>
+  <style>
+    /* Estilos CSS para o boletim informativo */
+   
+   body {
+      font-family: Arial, sans-serif;
+      
+      padding: 20px;
+      background-image: url("https://depticodes.github.io/informedti/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+     
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+     
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+	  
+    }
+
+    ul {
+	 
+      line-height: 1.5;
+	  
+    }
+	
+	li:before {
+		
+		line-height: 1.5;
+    }
+  
+    .custom-marker::before {
+		content: "▶"; /* Define o marcador personalizado */
+		margin-right: 5px; /* Espaçamento entre o marcador e o texto */
+	 }
+	
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+	  font-size : 12px;
+    }
+
+    .justificado {
+      text-align: justify;
+    }
+	
+	.center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	}
+	
+	.image-container {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.zoomable-image {
+	  display: block;
+	  max-width: 100%;
+	  height: auto; /* Adicionado para manter a proporção correta da imagem */
+	}
+
+	.zoom-overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0, 0, 0, 0);
+	  opacity: 0;
+	  transition: opacity 0.3s ease;
+	  pointer-events: none;
+	}
+
+	.image-container:hover .zoom-overlay {
+	  opacity: 1;
+	}
+
+	.image-container:hover .zoomable-image {
+	  transform: scale(1.7);
+	}
+
+	@media screen and (max-width: 768px) {
+	  .image-container:hover .zoomable-image {
+		transform: scale(1); /* Voltar ao tamanho original em telas menores */
+	  }
+	}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  
+   
+   
+   <h3  align="center">Informativo da Diretoria de Tecnologia da Informação </h3>  
+    
+    <p class="justificado">Bem-vindo(a) ao nosso boletim informativo. Nesta edição, apresentamos os ganhos para a Secretaria Geral das Comissões - SGC, 
+	a partir de uma nova forma de monitoramento do fluxo das suas atividades. Confira: </p>
+    
+     
+     <ul class="custom-marker">Treinamento e implantação do  <a href="https://trello.com/pt-BR" target="_blank">Trello</a>, ferramenta de gerenciamento de trabalho e colaboração baseada na web, 
+	 para acompanhamento e organização do fluxo de atividades da SGC.</ul>
+		 
+	 <ul  style="color: #0000FF;">O que ganha a Alba?</ul>
+	 <ul>
+		  <li class="justificado">Melhor controle de todas as atividades da SGC;</li>
+		  
+		  <li class="justificado">Modernização das atividades do processo legislativo;</li>
+		  
+		  <li class="justificado">Maior celeridade à tramitação de atas e relatórios produzidos por secretários, revisores e técnicos.</li>
+	</ul>
+	
+	<ul> <span style="color: blue;">Público-alvo:</span><span style="color: black;"> Área Parlamentar</span></ul>
+	 
+	 <div class="container">
+		<div class="image-container">
+		
+		  <img src="https://i.imgur.com/pRzngA3.jpg"  alt="Cards do Trello - fluxo de atividades SGC" class="zoomable-image">
+		  <div class="zoom-overlay"></div>
+		</div>
+		<p align="center" style="font-size: 12px;">Figura: Cards do Trello - fluxo de atividades SGC</p>	
+	</div>
+	
+	 <p align="center">Agradecemos por acompanhar nosso boletim informativo. Até a próxima edição!</p>
+    
+
+    <div class="footer">
+     
+	  <p>DTI- Diretoria de Tecnologia da Informação</p>
+	  <p>(71)3115-7298</p>
+	  <p>dti@alba.ba.gov.br</p>
+	 <img src="https://depticodes.github.io/informedti/logoAlbaNovoV2.jpg"  class="img-fluid" width="100%" />
+	</div>
+	
+	
+  </div>
+</body>
+
+</html>
